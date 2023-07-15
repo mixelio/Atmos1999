@@ -193,10 +193,10 @@ input::-webkit-search-results-decoration {
   background-size: contain;
 }
 .page__underdecorate--blue::before {
-  background-image: url("/image/decorat-line-blue.svg");
+  background-image: url("image/decorat-line-blue.svg");
 }
 .page__underdecorate--red::before {
-  background-image: url("/image/decorat-line-red.svg");
+  background-image: url("image/decorat-line-red.svg");
   -webkit-transform: rotateY(180deg);
           transform: rotateY(180deg);
 }
@@ -371,7 +371,7 @@ input::-webkit-search-results-decoration {
   display: inline-block;
   width: 50px;
   height: 100px;
-  background-image: url("/image/icons/arrow-down.svg");
+  background-image: url("image/icons/arrow-down.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -555,7 +555,7 @@ input::-webkit-search-results-decoration {
   height: 60px;
   -webkit-transform: translate(-90%, -100%);
           transform: translate(-90%, -100%);
-  background-image: url("/image/icons/arrow-1.svg");
+  background-image: url("image/icons/arrow-1.svg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -615,7 +615,7 @@ input::-webkit-search-results-decoration {
           transform: translateY(-50%);
   height: 18px;
   width: 18px;
-  background-image: url("/image/icons/check-mark.png");
+  background-image: url("image/icons/check-mark.png");
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
@@ -625,7 +625,7 @@ input::-webkit-search-results-decoration {
   position: relative;
   padding: 164px 0;
   margin-bottom: 56px;
-  background-image: url("/image/background-1.jpg");
+  background-image: url("image/background-1.jpg");
   background-size: cover;
   background-position: center;
   z-index: 0;
@@ -917,10 +917,10 @@ input::-webkit-search-results-decoration {
           transform: translateY(-50%);
 }
 .footer-contacts__link--phone::before {
-  background: url("/image/icons/phone.svg") center/contain no-repeat;
+  background: url("image/icons/phone.svg") center/contain no-repeat;
 }
 .footer-contacts__link--email::before {
-  background: url("/image/icons/mail.svg") center/contain no-repeat;
+  background: url("image/icons/mail.svg") center/contain no-repeat;
 }
 .footer-navigation {
   width: 95%;
