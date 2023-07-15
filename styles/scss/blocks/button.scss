@@ -1,0 +1,36 @@
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 140px;
+  height: 40px;
+  border-radius: 5px;
+  color: #FFF;
+  font-size: 18px;
+  font-weight: 400;
+  transition-duration: 300ms;
+
+
+  &--red {
+    background: #F08178;
+    &:hover {
+      background: #FF5B4E;
+    }
+  }
+
+  &--dark {
+    background: #424F5F;
+    &:hover {
+      background: #2C3540;
+    }
+  }
+
+  &--transparent {
+    background: none;
+    border: 1px solid #FFF;
+    &:hover {
+      border: 1px solid #FF5B4E;
+    }
+  }
+}

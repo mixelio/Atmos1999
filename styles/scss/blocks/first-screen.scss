@@ -1,0 +1,48 @@
+.first-screen {
+  margin-bottom: 48px;
+  .container {
+    position: relative;
+  }
+
+  &__title {
+    max-width: 840px;
+    margin-bottom: 15px;
+    color: #272727;
+    font-family: FuturaPT;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: 130%;
+    text-transform: uppercase;
+  }
+  &__text {
+    max-width: 550px;
+    color: #404040;
+    font-size: 18px;
+    font-weight: 400;
+  }
+  &__go-down {
+    position: absolute;
+    bottom: 0;
+    right: 15%;
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 0;
+      transform: translateX(-100%);
+
+      display: inline-block;
+      width: 50px;
+      height: 100px;
+      background-image: url("/image/icons/arrow-down.svg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &-img {
+      width: 100%;
+    }
+  }
+}

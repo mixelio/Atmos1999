@@ -1,0 +1,10 @@
+.title {
+  font-size: 35px;
+  font-weight: 500;
+  &--dark {
+    color: #272727;
+  }
+  &--light {
+    color: #fff;
+  }
+}

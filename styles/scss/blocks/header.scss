@@ -1,0 +1,38 @@
+.header {
+  padding: 15px 0;
+  &__row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__item {
+
+  }
+  &__logo {
+
+  }
+  &__logo-image {
+
+  }
+  &__menu {
+    ul {
+      display: flex;
+      gap: 40px;
+    }
+
+    li {
+
+    }
+
+    a {
+      color: #272727;
+      font-size: 18px;
+      font-weight: 400;
+      transition-duration: 300ms;
+
+      &:hover {
+        color: #FF5B4E;
+      }
+    }
+  }
+}

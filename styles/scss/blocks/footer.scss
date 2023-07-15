@@ -1,0 +1,247 @@
+.footer {
+  padding: 82px 0 32px;
+  background-color: #2C3540;
+
+  &-contacts {
+    margin-bottom: 48px;
+    &__content {
+      display: flex;
+      align-items: center;
+      gap: 40px;
+    }
+
+    &__box {
+      flex: 1;
+      
+      &:first-child {
+        flex: 1 1 70%;
+        background-color: #F2F2F2;
+        border-radius: 8px;
+        padding: 45px 50px 50px;
+      }
+
+      &:last-child {
+        flex: 1 1 30%;
+      }
+    }
+
+    &__subtitle {
+      color: #272727;
+      text-align: center;
+      font-size: 25px;
+      font-weight: 500;
+      line-height: normal;
+      margin-bottom: 28px;
+    }
+
+    &__form {
+
+    }
+
+    &__inputs-container {
+      margin-bottom: 20px;
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+
+    &__input {
+      flex: 0 1 48%;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: #272727;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+      
+      input {
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: 1px solid #99A1AC;
+        background: #FFF;
+      }
+    }
+    &__textarea {
+      margin-bottom: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      color: #272727;
+      font-size: 12px;
+      font-weight: 700;
+      line-height: normal;
+      
+      textarea {
+        resize: none;
+        padding: 12px 20px;
+        border-radius: 5px;
+        border: 1px solid #99A1AC;
+        background: #FFF;
+      }
+    }
+    &__button-box {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+    &__button {
+
+    }
+
+    span {
+
+    }
+  
+    .privacy-policy {
+      color: #F08178;
+      text-decoration: underline;
+    }
+
+    &__title {
+      margin-bottom: 22px;
+    }
+
+    &__text {
+      margin-bottom: 46px;
+      color: #97A3B4;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__direct {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 18px;
+      border-bottom: 1px solid #97A3B4;
+
+      span {
+        margin-bottom: 4px;
+        color: #F08178;
+        font-family: Montserrat;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: normal;
+      }
+
+      &:not(:last-child) {
+        margin-bottom: 20px;
+      }
+    }
+
+    &__link {
+      color: #97A3B4;
+      font-family: Montserrat;
+      font-size: 14px;
+      font-weight: 500;
+      line-height: normal;
+      position: relative;
+
+      padding-left: 26px;
+
+      &::before {
+        content: "";
+        position: absolute;
+        display: inline-block;
+        width: 16px;
+        height: 16px;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+      }
+
+      &--phone {
+        &::before {
+          background: url("/image/icons/phone.svg") center / contain no-repeat;
+        }
+      }
+
+      &--email {
+        &::before {
+          background: url("/image/icons/mail.svg") center / contain no-repeat;
+        }
+      }
+    }
+  }
+
+  &-navigation {
+    width: 95%;
+    margin: 0 auto;
+    padding: 32px 0 16px;
+    border-radius: 10px;
+    background: #1D232B;
+
+    &__content {
+      display: flex;
+      justify-content: space-between;
+      padding-bottom: 36px;
+      margin-bottom: 16px;
+      border-bottom: 1px solid #99A1AC;
+    }
+
+    &__box {
+
+      &:last-child {
+        display: flex;
+        gap: 64px;
+      }
+    }
+
+    &__logo-link {
+      display: inline-block;
+      margin-bottom: 10px;
+    }
+
+    &__logo-image {
+      width: 122px;
+      height: 34px;
+    }
+
+    &__text {
+      color: #99A1AC;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__item {
+
+    }
+
+    &__subtitle {
+      margin-bottom: 20px;
+      color: #FFF;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    &__list {
+
+      li {
+        &:not(:last-child) {
+          margin-bottom: 15px;
+        }
+      }
+
+      a {
+        color: #99A1AC;
+        font-size: 16px;
+        font-weight: 400;
+        transition-duration: 300ms;
+
+        &:hover {
+          color: #F08178;
+        }
+      }
+    }
+    
+    &__copirate {
+      color: #99A1AC;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}

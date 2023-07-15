@@ -1,0 +1,39 @@
+.page {
+  font-family: FuturaPT;
+
+  &__underdecorate {
+    position: relative;
+
+    &--font-change {
+      font-family: Arizonia;
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 50%;
+      bottom: -35%;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+
+    &--blue {
+      &::before {
+        background-image: url("/image/decorat-line-blue.svg");
+      }
+    }
+    &--red {
+      &::before {
+        background-image: url("/image/decorat-line-red.svg");
+        transform: rotateY(180deg);
+      }
+    }
+  }
+
+  .container {
+    max-width: 1120px;
+    margin: 0 auto;
+    padding: 0 10px;
+  }
+}

@@ -1,0 +1,42 @@
+.testimonials {
+  margin-bottom: 56px;
+  &__content {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+  }
+  &__slider {
+    flex: 1 1 45%;
+  }
+
+  &__title {
+    margin-bottom: 22px;
+    color: #FFF;
+    font-size: 22px;
+    font-weight: 700;
+  }
+  &__text {
+    margin-bottom: 12px;
+    color: #FFF;
+    font-size: 22px;
+    line-height: 1.5;
+    font-weight: 400;
+  }
+  &__author {
+    display: block;
+    margin-bottom: 32px;
+    color: #F08178;
+    font-size: 16px;
+    font-weight: 700;
+  }
+  &__image {
+    flex: 1 1 55%;
+    border-radius: 20px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}
