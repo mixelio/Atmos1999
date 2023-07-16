@@ -784,7 +784,7 @@ input::-webkit-search-results-decoration {
   position: relative;
   padding: 164px 0;
   margin-bottom: 56px;
-  background-image: url("../image/background-1.jpg");
+  background-image: url("../image/background-1.webp");
   background-size: cover;
   background-position: center;
   z-index: 0;
