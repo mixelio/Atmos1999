@@ -18,10 +18,22 @@
           &::before {
             left: auto;
             right: 0;
-            transform: translate(50%, -100%) rotateY(180deg);
+            transform: translate(50%, -100%) rotateY(180deg) rotateZ(0);
+
+            @include onSmallTablet {
+              transform: translate(0%, -100%) rotateY(0deg) rotateZ(130deg);
+            }
           }
         }
+
+        @include onSmallTablet {
+          flex-direction: column;
+        }
       }
+    }
+
+    @include onSmallTablet {
+      flex-direction: column;
     }
 
     &:not(:last-child) {
@@ -46,11 +58,17 @@
         top: 0;
         width: 100px;
         height: 60px;
-        transform: translate(-90%, -100%);
+        transform: translate(-90%, -100%) rotateZ(0deg);
         background-image: url("/image/icons/arrow-1.svg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+
+        @include onSmallTablet {
+          left: auto;
+          right: 0;
+          transform: translate(0%, -100%) rotateZ(130deg);
+        }
       }
     }
   }
@@ -68,6 +86,13 @@
       box-shadow: -20px 20px 0 #F08178;
     }
   }
+
+  &__dots {
+    @include onDesctop {
+      display: none;
+    }
+  }
+
   &__title {
     margin-bottom: 10px;
   }

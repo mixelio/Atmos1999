@@ -4,6 +4,10 @@
 
   &__content {
     padding: 0 150px;
+
+    @include onBigTablet {
+      padding: 0;
+    }
   }
 
   &__image {
@@ -22,6 +26,10 @@
     z-index: 2;
     background-color: #fff;
     border-radius: 20px;
+
+    @include onBigPhones {
+      padding: 54px 20px;
+    }
   }
 
   &__title {

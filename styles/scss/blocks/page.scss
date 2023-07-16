@@ -1,6 +1,11 @@
 .page {
   font-family: FuturaPT;
 
+  &__body {
+    &._lock {
+      overflow: hidden;
+    }
+  }
   &__underdecorate {
     position: relative;
 

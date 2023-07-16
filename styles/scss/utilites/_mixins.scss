@@ -1,29 +1,29 @@
+@mixin onBigPhones {
+  @media (max-width: 640px) {
+    @content;
+  }
+}
+
+@mixin onSmallTablet {
+  @media (max-width: 740px) {
+    @content;
+  }
+}
+
 @mixin onTablet {
-  @media (min-width: 640px) {
+  @media (max-width: 860px) {
     @content;
   }
 }
 
 @mixin onBigTablet {
-  @media (min-width: 890px) {
+  @media (max-width: 920px) {
     @content;
   }
 }
 
 @mixin onDesctop {
-  @media (min-width: 1280px) {
-    @content;
-  }
-}
-
-@mixin onDesign {
-  @media (min-width: 1600px) {
-    @content;
-  }
-}
-
-@mixin onLargeScreens {
-  @media (min-width: 2560px) {
+  @media (max-width: 1200px) {
     @content;
   }
 }

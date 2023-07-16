@@ -7,6 +7,7 @@
   &__row {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
   }
   &__item {
     flex: 1;
@@ -17,6 +18,10 @@
     flex-direction: column;
     align-items: center;
     transition-duration: 300ms;
+
+    @include onBigTablet {
+      flex: 1 1 48%;
+    }
 
     &:hover {
       background-color: #F7F7F7;

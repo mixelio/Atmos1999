@@ -1,0 +1,34 @@
+.menu {
+  &__icon {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 40px;
+    transform: translate(-50%, -50%);
+
+    img {
+      height: 100%;
+    }
+    
+
+
+    @include onTablet {
+      display: block;
+    }
+  }
+
+  &__opener {
+    z-index: 3;
+    &._active {
+      display: none;
+    }
+  }
+
+  &__closer {
+    z-index: 8;
+    top: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}

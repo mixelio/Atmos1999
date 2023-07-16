@@ -13,6 +13,14 @@
     font-weight: 500;
     line-height: 130%;
     text-transform: uppercase;
+
+    @include onSmallTablet {
+      font-size: 54px;
+    }
+
+    @include onBigPhones {
+      font-size: 36px;
+    }
   }
   &__text {
     max-width: 550px;
@@ -24,6 +32,14 @@
     position: absolute;
     bottom: 0;
     right: 15%;
+
+    @include onTablet {
+      right: 10px;
+    }
+
+    @include onSmallTablet {
+      display: none;
+    }
 
     &:before {
       content: "";
