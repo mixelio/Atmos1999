@@ -1,26 +1,31 @@
 .header {
+  margin-bottom: 88px;
   padding: 15px 0;
+  
+
   &__row {
+    min-height: 40px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 20px;
     position: relative;
   }
-  &__item {
-    
-  }
 
   &__button {
+
     @include onBigPhones {
-      width: 110px;
+      display: none;
     }
   }
   &__logo {
-
+    display: inline-block;
+    width: 230px;
+    height: 18px;
   }
   &__logo-image {
-
+    width: 100%;
+    height: auto;
   }
   &__menu {
     @include onTablet {
@@ -33,11 +38,16 @@
       height: 100%;
       transition-duration: 300ms;
 
-      transform: translateY(-50%) rotateX(90deg) scale(0);
-      border-radius: 100%;
+      transform: translate(0, -50%) rotateX(90deg) scale(0);
+      border-radius: 50%;
+
+      @include onBigPhones {
+        transform: translate(70%, -70%) rotateX(90deg) scale(0);
+        border-radius: 50% 0 50% 50%;
+      }
 
       &._active {
-        transform: translateY(0) rotateX(0) scale(1);
+        transform: translate(0, 0) rotateX(0) scale(1.002);
         border-radius: 0;
       }
     }
@@ -53,10 +63,6 @@
       }
     }
 
-    li {
-
-    }
-
     a {
       color: #272727;
       font-size: 18px;
@@ -70,6 +76,15 @@
 
       &:hover {
         color: #FF5B4E;
+      }
+    }
+
+    .header__button {
+      display: none;
+      font-size: 16px;
+
+      @include onBigPhones {
+        display: flex;
       }
     }
   }

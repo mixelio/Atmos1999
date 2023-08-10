@@ -1,6 +1,5 @@
 .footer {
-  padding: 82px 0 32px;
-  background-color: #2C3540;
+  padding: 68px 0 32px;
 
   &-contacts {
     margin-bottom: 48px;
@@ -213,11 +212,13 @@
     &__logo-link {
       display: inline-block;
       margin-bottom: 10px;
+      width: 230px;
+      height: 18px;
     }
 
     &__logo-image {
-      width: 122px;
-      height: 34px;
+      width: 100%;
+      height: auto;
     }
 
     &__text {

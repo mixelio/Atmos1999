@@ -16,6 +16,12 @@
     @include onTablet {
       display: block;
     }
+
+    @include onBigPhones {
+      left: auto;
+      right: 0px;
+      transform: translate(0, -50%);
+    }
   }
 
   &__opener {
@@ -30,5 +36,11 @@
     top: 15px;
     left: 50%;
     transform: translateX(-50%);
+
+    @include onBigPhones {
+      left: auto;
+      right: 10px;
+      transform: translateX(0);
+    }
   }
 }

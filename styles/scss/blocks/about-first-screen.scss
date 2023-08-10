@@ -1,0 +1,40 @@
+.about-first-screen {
+  margin-bottom: 120px;
+  padding-bottom: 460px;
+  position: relative;
+
+  &__title {
+    color: #2C3540;
+    font-size: 65px;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+
+    @include onSmallTablet {
+      font-size: 54px;
+    }
+
+    @include onBigPhones {
+      font-size: 38px;
+    }
+  }
+  
+  &__text {
+    max-width: 790px;
+    color: #97A3B4;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__background {
+    position: absolute;
+    display: inline-block;
+    width: 100%;
+    height: 85%;
+    bottom: 0;
+    left: 0;
+    object-fit: cover;
+  }
+}

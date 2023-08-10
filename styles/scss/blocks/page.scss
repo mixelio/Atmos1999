@@ -7,10 +7,12 @@
     }
   }
   &__underdecorate {
+    display: inline-block;
     position: relative;
 
     &--font-change {
-      font-family: Arizonia;
+      font-family: BrushScript;
+      font-weight: 500;
     }
 
     &:before {
@@ -25,12 +27,12 @@
 
     &--blue {
       &::before {
-        background-image: url("/image/decorat-line-blue.svg");
+        background-image: url("../image/decorat-line-blue.svg");
       }
     }
     &--red {
       &::before {
-        background-image: url("/image/decorat-line-red.svg");
+        background-image: url("../image/decorat-line-red.svg");
         transform: rotateY(180deg);
       }
     }

@@ -1,5 +1,4 @@
 .faq {
-  padding: 350px 0 38px;
   position: relative;
 
   &__content {
@@ -21,15 +20,7 @@
   }
 
   &__spollers-box {
-    position: relative;
-    padding: 54px 70px;
-    z-index: 2;
-    background-color: #fff;
-    border-radius: 20px;
 
-    @include onBigPhones {
-      padding: 54px 20px;
-    }
   }
 
   &__title {
