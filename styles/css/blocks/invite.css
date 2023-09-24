@@ -1,0 +1,7 @@
+.invite__content {
+  padding: 120px 50px;
+  background-image: url("../image/invite-bakground.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

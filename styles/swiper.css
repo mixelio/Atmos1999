@@ -1,0 +1,27 @@
+.swiper {
+  border-radius: 20px;
+  background: #424F5F;
+  overflow: hidden;
+}
+.swiper-slide {
+  padding: 32px;
+}
+.swiper-pagination {
+  padding: 0 20px;
+}
+.swiper-pagination > .swiper-pagination-bullets {
+  bottom: 32px;
+}
+.swiper-pagination-bullet {
+  width: 30%;
+  border-radius: 0;
+  height: 2px;
+  background: #D9D9D9;
+  opacity: 1;
+}
+.swiper-pagination-bullet-active {
+  background-color: #F08178;
+}
+.swiper-horizontal > .swiper-pagination-bullets {
+  bottom: 32px;
+}/*# sourceMappingURL=swiper.css.map */

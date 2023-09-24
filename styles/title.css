@@ -1,0 +1,10 @@
+.title {
+  font-size: 35px;
+  font-weight: 500;
+}
+.title--dark {
+  color: #272727;
+}
+.title--light {
+  color: #fff;
+}/*# sourceMappingURL=title.css.map */
