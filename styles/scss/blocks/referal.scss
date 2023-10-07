@@ -1,0 +1,179 @@
+.referal-first-screen {
+  position: relative;
+  height: 680px;
+  padding-top: 120px;
+  margin-bottom: 60px;
+
+  @include onBigTablet {
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 2;
+
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-color: rgba($color: #fff, $alpha: 0.7);
+    }
+  }
+
+  @include onTablet {
+    height: auto;
+    padding-top: 60px;
+  }
+
+  &__info {
+    position: relative;
+    z-index: 3;
+  }
+
+  &__title {
+    margin-bottom: 12px;
+    max-width: 530px;
+    color: #000;
+    font-family: inherit;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: normal;
+
+    @include onTablet {
+      font-size: 52px;
+    }
+
+    @include onSmallTablet {
+      font-size: 42px;
+    }
+  }
+
+  &__aditional-text {
+    margin-bottom: 12px;
+    max-width: 280px;
+    color: #EC7E75;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__logo {
+    display: block;
+    width: 232px;
+    height: 18px;
+    object-fit: contain;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+    @include onSmallTablet {
+      display: none;
+    }
+  }
+}
+
+.referal {
+  &__footer {
+    .footer-contacts__content {
+      align-items: flex-start;
+    }
+
+    .footer-contacts__box {
+      &:last-child {
+        padding-top: 50px;
+      }
+    }
+
+    .footer-contacts__title {
+      color: #2C3540;
+      font-family: inherit;
+      font-size: 35px;
+      font-weight: 500;
+      line-height: normal;
+    }
+
+    .footer-contacts__button-box {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #6C6C6C;
+      text-align: center;
+      font-family: inherit;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+}
+
+.ability {
+  &__content {
+    display: flex;
+    gap: 130px;
+
+    @include onTablet {
+      gap: 30px;
+    }
+
+    @include onBigPhones {
+      display: block;
+    }
+  }
+  &__block {
+    flex: 1;
+    @include onBigPhones {
+      &:not(:last-child) {
+        margin-bottom: 25px;
+      }
+    }
+  }
+  &__title {
+    margin-bottom: 30px;
+    color: #EC7E75;
+    font-family: inherit;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: normal;
+  }
+  &__text {
+    color: #97A3B4;
+    font-family: inherit;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: normal;
+    max-width: 400px;
+  }
+  &__list {
+
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    &:not(:last-child) {
+      margin-bottom: 16px;
+    }
+
+    img {
+      display: block;
+      width: 35px;
+    }
+
+    span {
+      color: #97A3B4;
+      font-family: inherit;
+      font-size: 18px;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 350px;
+    }
+  }
+}

@@ -1,5 +1,5 @@
 .page {
-  font-family: FuturaPT;
+  font-family: "FuturaPT";
 }
 .page__body._lock {
   overflow: hidden;
@@ -9,7 +9,7 @@
   position: relative;
 }
 .page__underdecorate--font-change {
-  font-family: BrushScript;
+  font-family: "BrushScript";
   font-weight: 500;
 }
 .page__underdecorate:before {
